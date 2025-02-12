@@ -10,6 +10,7 @@ body{
     text-align: center;
     min-height: 90vh;
     font-family: "Pixelify Sans";
+    user-select: none;
 }
 
 #heading{
@@ -43,8 +44,19 @@ body{
     padding: 50px;
 }
 
-#selector > li{
+#selector > li > a{
     padding: 0px 8vw;
     color: white;
     font-size: 20px;
+    text-decoration: none;
+}
+
+@keyframes selected{
+    0% { opacity: 100; }
+    50% { opacity: 0; }
+    100% { opacity: 100; }
+}
+
+.selected{
+    animation: selected 1.8s ease-in-out 0s infinite;
 }
