@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body{
+    margin: 5vh;
+    background-color: #3F1737;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 90vh;
+    font-family: "Pixelify Sans";
+    user-select: none;
+}
+
+#heading{
+    width: 48vw;
+}
+
+#heading > p {
+    text-align: start;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+#heading > h1{
+    margin: 0;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#center-gif{
+    height: 35vh;
+}
+
+#option-discrip{
+    color: white;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+#selector{
+    display: flex;
+    list-style-type: none;
+    padding: 50px;
+}
+
+#selector > li{
+    padding: 0px 8vw;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#selector > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@keyframes _selected{
+    0% { opacity: 100; }
+    50% { opacity: 0; }
+    100% { opacity: 100; }
+}
+
+.selected{
+    animation: _selected 1.8s ease-in-out 0s infinite;
+}

@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
         repetes++;
 
-        // if(repetes == 5){
-        //     window.location.href = "./home.html"
-        // }
+        if(repetes == 5){
+            window.location.href = "./home.html"
+        }
     }, 500);
 });
