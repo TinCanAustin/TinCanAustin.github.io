@@ -1,9 +1,21 @@
 function selectedChange(options, selection){
     options.forEach((option, index)=>{
+        let a = option.querySelector("a");
+        let select = option.querySelector(".select");
+
         if(index == selection){
-            option.querySelector("a").classList.add("selected");
+            a.classList.add("selected");
+            if (!select) {
+                select = document.createElement("span");
+                select.classList.add("select");
+                select.textContent = "> ";
+                option.prepend(select);
+            }
         }else{
-            option.querySelector("a").classList.remove("selected");
+            a.classList.remove("selected");
+            if(select){
+                select.remove();
+            }
         }
     });
 }

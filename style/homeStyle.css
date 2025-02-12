@@ -44,19 +44,25 @@ body{
     padding: 50px;
 }
 
-#selector > li > a{
+#selector > li{
     padding: 0px 8vw;
     color: white;
     font-size: 20px;
     text-decoration: none;
 }
 
-@keyframes selected{
+#selector > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@keyframes _selected{
     0% { opacity: 100; }
     50% { opacity: 0; }
     100% { opacity: 100; }
 }
 
 .selected{
-    animation: selected 1.8s ease-in-out 0s infinite;
+    animation: _selected 1.8s ease-in-out 0s infinite;
 }
