@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body{
+    background-color: #3F1737;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 90vh;
+}
+
+#heading{
+    font-family: "Pixelify Sans";
+    width: 48vw;
+}
+
+#heading > p {
+    text-align: start;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+#heading > h1{
+    margin: 0;
+    font-size: 50px;
+}
