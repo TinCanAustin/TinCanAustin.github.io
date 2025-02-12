@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body{
+    background-color: #5C2250;
+}
+
+.centerLoading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 90vh;
+}
+
+p{
+    font-family: "Pixelify Sans";
+    color: white;
+    font-weight: 700;
+}
