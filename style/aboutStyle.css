@@ -26,6 +26,13 @@ body{
     display: flex;
 }
 
+#topBar > p{
+    padding: 0px 1vw;
+    color: white;
+    font-size: 20px;
+    margin: auto 0;
+}
+
 #close{
     height: 5vh;
     width: 5vh;
