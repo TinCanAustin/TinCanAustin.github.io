@@ -59,3 +59,36 @@ body{
     text-align: start;
     overflow: hidden;
 }
+
+/* content */
+#selector{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#images{
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 30vh;
+}
+
+#images > img{
+    height: 30vh;
+    width: 30vh;
+    display: none;
+}
+
+#images > img.active{
+    display: block;
+}
+
+
+#prv, #next{
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    margin: 0px 5vw;
+}
