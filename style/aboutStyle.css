@@ -1,5 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 body{
-    background-color: #3F1737;
+    background-color: #5C2250;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 90vh;
+    font-family: "Pixelify Sans";
+    user-select: none;
+    height: 98vh;
+}
+
+#frame{
+    border: #A83E92 solid 1px;
+    width: 80vw;
+    height: 80vh;
+}
+
+#topBar{
+    border-bottom: #A83E92 solid 1px;
+    width: 80vw;
+    height: 5vh;
+    display: flex;
+}
+
+#close{
+    height: 5vh;
+    width: 5vh;
+    border-right: #A83E92 solid 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#close > p{
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 20px;
 }
