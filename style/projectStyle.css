@@ -82,6 +82,9 @@ body{
     margin-top: auto;
     margin-bottom: auto;
 }
+.texts > p > a{
+    color: wheat;
+}
 
 .title{
     border-bottom: #A83E92 solid 1px;
@@ -102,5 +105,6 @@ body{
 }
 
 .imageHolder > img{
-    height: calc(100% - 2vh);
+    height: calc(100% - 10vh);
+    margin: auto auto;
 }
