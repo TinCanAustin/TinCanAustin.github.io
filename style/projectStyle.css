@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body{
+    background-color: #5C2250;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 90vh;
+    font-family: "Pixelify Sans";
+    user-select: none;
+    height: 98vh;
+}
+
+#frame{
+    border: #A83E92 solid 1px;
+    width: 80vw;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#topBar{
+    border-bottom: #A83E92 solid 1px;
+    width: 80vw;
+    height: 5vh;
+    display: flex;
+}
+
+#topBar > p{
+    padding: 0px 1vw;
+    color: white;
+    font-size: 20px;
+    margin: auto 0;
+}
+
+#close{
+    height: 5vh;
+    width: 5vh;
+    border-right: #A83E92 solid 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#close > a{
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#content{
+    margin: 2vh 2vh;
+    height: 70vh;
+    text-align: start;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+#content::-webkit-scrollbar{
+    display: none;
+}
+
+/* Content */
+.projectContainer{
+    border: #A83E92 solid 1px;
+    height: 30vh;
+    color: white;
+    display: flex;
+    margin-bottom: 2vh;
+}
+
+.texts{
+    margin-left: 2vw;
+    width: 50vw;
+    border-right: #A83E92 solid 1px;
+    height: calc(100% - 5vh);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.texts > p > a{
+    color: wheat;
+}
+
+.title{
+    border-bottom: #A83E92 solid 1px;
+}
+.title > h2{
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.disc{
+    font-size: 20px;
+}
+
+.imageHolder{
+    width: 26vw;
+    display: flex;
+    justify-content: center;
+}
+
+.imageHolder > img{
+    height: calc(100% - 10vh);
+    margin: auto auto;
+}
