@@ -57,11 +57,50 @@ body{
     margin: 2vh 2vh;
     height: 70vh;
     text-align: start;
-    scroll-snap-type: y mandatory;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
 #content::-webkit-scrollbar{
     display: none;
+}
+
+/* Content */
+.projectContainer{
+    border: #A83E92 solid 1px;
+    height: 30vh;
+    color: white;
+    display: flex;
+    margin-bottom: 2vh;
+}
+
+.texts{
+    margin-left: 2vw;
+    width: 50vw;
+    border-right: #A83E92 solid 1px;
+    height: calc(100% - 5vh);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.title{
+    border-bottom: #A83E92 solid 1px;
+}
+.title > h2{
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.disc{
+    font-size: 20px;
+}
+
+.imageHolder{
+    width: 26vw;
+    display: flex;
+    justify-content: center;
+}
+
+.imageHolder > img{
+    height: calc(100% - 2vh);
 }
