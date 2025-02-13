@@ -59,6 +59,7 @@ body{
     text-align: start;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 #content::-webkit-scrollbar{
@@ -68,6 +69,17 @@ body{
 section{
     scroll-snap-align: start;
     height: inherit;
+}
+
+.contentFooter{
+    text-align: center;
+    margin: 2vh;
+}
+
+.contentFooter > a{
+    text-decoration: none;
+    color: #903981;
+    font-size: 20px;
 }
 
 /* First Content */
@@ -109,12 +121,6 @@ section{
     text-decoration: none;
     color: #86CECB;
 }
-
-.contentFooter{
-    text-align: center;
-    margin: 2vh;
-}
-
 /* Second Page */
 #extraCont{
     display: flex;
