@@ -54,17 +54,31 @@ body{
 }
 
 #content{
-    margin: 2vh 2vw;
+    margin: 2vh 2vh;
     height: 70vh;
     text-align: start;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
+#content::-webkit-scrollbar{
+    display: none;
+}
+
+section{
+    scroll-snap-align: start;
+    height: inherit;
+}
+
+/* First Content */
 #introContent{
     color: white;
 }
 
 #introContent > h2{
     font-size: 50px;
+    margin-top: 5px;
+    text-align: center;
 }
 
 #intro{
@@ -99,4 +113,24 @@ body{
 .contentFooter{
     text-align: center;
     margin: 2vh;
+}
+
+/* Second Page */
+#extraCont{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    width: 55vw;
+    margin: auto auto;
+}
+
+#extraCont > h2{
+    font-size: 35px;
+    margin: 0;
+}
+
+#extraCont > ul > li{
+    font-size: 20px;
+    padding: 1vh 0vw;
 }
