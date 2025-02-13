@@ -134,3 +134,49 @@ section{
     font-size: 20px;
     padding: 1vh 0vw;
 }
+
+/* Third content */
+
+#misc{
+    color: white;
+}
+
+#misc > h1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 100;
+}
+
+#misc p{
+    font-size: 20px;
+}
+
+@keyframes scrollGames {
+    from {
+        transform: translateX(0);
+    } to {
+        transform: translateX(-50%);
+    }
+}
+
+#games {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+#gameImages {
+    display: flex;
+    gap: 15px;
+    width: max-content;
+    animation: scrollGames 32s linear infinite;
+}
+
+#gameImages > img{
+    height: 20vh;
+}
+
+#spotify-container{
+    display: flex;
+    justify-content: space-between;
+}
