@@ -50,3 +50,42 @@ body{
     color: white;
     font-size: 20px;
 }
+
+#content{
+    margin: 2vh 2vw;
+    height: 70vh;
+    text-align: start;
+}
+
+#introContent > h2{
+    font-size: 40px;
+    color: white;
+}
+
+#intro{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#introImage {
+    height: 50vh;
+}
+
+#introTexts{
+    width: 42vw;
+}
+
+#introTexts > h2{
+    font-size: 40px;
+}
+#introTexts > p{
+    font-size: 25px;
+}
+#introTexts p:first-child {
+    margin-top: 5px;
+}
+#introTexts > p > a{
+    text-decoration: none;
+    color: #86CECB;
+}
