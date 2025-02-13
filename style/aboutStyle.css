@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body{
+    background-color: #5C2250;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 90vh;
+    font-family: "Pixelify Sans";
+    user-select: none;
+    height: 98vh;
+}
+
+#frame{
+    border: #A83E92 solid 1px;
+    width: 80vw;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#topBar{
+    border-bottom: #A83E92 solid 1px;
+    width: 80vw;
+    height: 5vh;
+    display: flex;
+}
+
+#topBar > p{
+    padding: 0px 1vw;
+    color: white;
+    font-size: 20px;
+    margin: auto 0;
+}
+
+#close{
+    height: 5vh;
+    width: 5vh;
+    border-right: #A83E92 solid 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#close > a{
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#content{
+    margin: 2vh 2vh;
+    height: 70vh;
+    text-align: start;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+#content::-webkit-scrollbar{
+    display: none;
+}
+
+section{
+    scroll-snap-align: start;
+    height: inherit;
+}
+
+.contentFooter{
+    text-align: center;
+    margin: 2vh;
+}
+
+.contentFooter > a{
+    text-decoration: none;
+    color: #903981;
+    font-size: 20px;
+}
+
+/* First Content */
+#introContent{
+    color: white;
+}
+
+#introContent > h2{
+    font-size: 50px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#intro{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 3vw;
+}
+
+#introImage {
+    height: 50vh;
+}
+
+#introTexts{
+    width: 42vw;
+}
+
+#introTexts > h2{
+    font-size: 40px;
+}
+#introTexts > p{
+    font-size: 25px;
+    margin-top: 4vh;
+}
+#introTexts p:first-child {
+    margin-top: 5px;
+}
+#introTexts > p > a{
+    text-decoration: none;
+    color: #86CECB;
+}
+/* Second Page */
+#extraCont{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    width: 55vw;
+    margin: auto auto;
+}
+
+#extraCont > h2{
+    font-size: 35px;
+    margin: 0;
+}
+
+#extraCont > ul > li{
+    font-size: 20px;
+    padding: 1vh 0vw;
+}
+
+/* Third content */
+
+#misc{
+    color: white;
+}
+
+#misc > h1{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 100;
+}
+
+#misc p{
+    font-size: 20px;
+}
+
+@keyframes scrollGames {
+    from {
+        transform: translateX(0);
+    } to {
+        transform: translateX(-50%);
+    }
+}
+
+#games {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+#gameImages {
+    display: flex;
+    gap: 15px;
+    width: max-content;
+    animation: scrollGames 32s linear infinite;
+}
+
+#gameImages > img{
+    height: 20vh;
+}
+
+#spotify-container{
+    display: flex;
+    justify-content: space-between;
+}
