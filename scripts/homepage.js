@@ -50,10 +50,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             selected = (selected + 1) % options.length;
             selectedChange(options, selected);
         }else if(e.key == "ArrowLeft" || e.key == "a"){
-            selected = (selected - 1) % options.length;
-            if(selected < 0){
-                selected *= -1;
-            }
+            selected = (selected - 1 + options.length) % options.length;
             selectedChange(options, selected);
         }else if(e.key == "Enter"){
             pageOpen(options[selected].querySelector("a").innerHTML);
