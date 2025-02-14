@@ -65,7 +65,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 80%;
 }
 
 #images{
@@ -91,4 +91,16 @@ body{
     cursor: pointer;
     user-select: none;
     margin: 0px 5vw;
+}
+
+#link{
+    text-align: center;
+    margin: 0px;
+}
+#link > a{
+    color: black;
+    font-size: 30px;
+}
+#link > a:hover{
+    color: gray;
 }
