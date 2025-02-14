@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body{
+    background-color: #5C2250;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 90vh;
+    font-family: "Pixelify Sans";
+    user-select: none;
+    height: 98vh;
+}
+
+#frame{
+    border: #A83E92 solid 1px;
+    width: 80vw;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#topBar{
+    border-bottom: #A83E92 solid 1px;
+    width: 80vw;
+    height: 5vh;
+    display: flex;
+}
+
+#topBar > p{
+    padding: 0px 1vw;
+    color: white;
+    font-size: 20px;
+    margin: auto 0;
+}
+
+#close{
+    height: 5vh;
+    width: 5vh;
+    border-right: #A83E92 solid 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#close > a{
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#content{
+    margin: 2vh 2vh;
+    height: 70vh;
+    text-align: start;
+    overflow: hidden;
+}
+
+/* content */
+#selector{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+#images{
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 30vh;
+}
+
+#images > img{
+    height: 30vh;
+    width: 30vh;
+    display: none;
+}
+
+#images > img.active{
+    display: block;
+}
+
+
+#prv, #next{
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    margin: 0px 5vw;
+}
+
+#link{
+    text-align: center;
+    margin: 0px;
+}
+#link > a{
+    color: black;
+    font-size: 30px;
+}
+#link > a:hover{
+    color: gray;
+}
