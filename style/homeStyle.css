@@ -66,3 +66,9 @@ body{
 .selected{
     animation: _selected 1.8s ease-in-out 0s infinite;
 }
+
+#footer{
+    bottom: 0;
+    position: absolute;
+    color: gray;
+}
